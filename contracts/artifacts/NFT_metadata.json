@@ -21,6 +21,11 @@
 						"internalType": "string",
 						"name": "_initBaseURI",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_initNotRevealedUri",
+						"type": "string"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -298,6 +303,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "notRevealedUri",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "owner",
 				"outputs": [
 					{
@@ -372,6 +390,26 @@
 				"name": "renounceOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reveal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "revealed",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -478,6 +516,19 @@
 					}
 				],
 				"name": "setCost",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_notRevealedURI",
+						"type": "string"
+					}
+				],
+				"name": "setNotRevealedURI",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -768,7 +819,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/2_CryptoEyes.sol": "NFT"
+			"contracts/3_Reveal_nft.sol": "NFT"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -886,12 +937,12 @@
 				"dweb:/ipfs/Qmct36zWXv3j7LZB83uwbg7TXwnZSN1fqHNDZ93GG98bGz"
 			]
 		},
-		"contracts/2_CryptoEyes.sol": {
-			"keccak256": "0x7ebaf50cb49d36bc282f8015ec1feaef46606a3d99cc1f1046852cd462cfb922",
+		"contracts/3_Reveal_nft.sol": {
+			"keccak256": "0x68249b67f1ab606cec24747641e0a3e54ca1ac21fe9e9c90aa76b51c73a3cbd9",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ead7ce8150799235381336782ef37e9929cfe151468b56910dcf489902824545",
-				"dweb:/ipfs/QmWgLk8UQTrAL2rWaTFMjtAUVhimgFypAUv1gwhBwKeAL7"
+				"bzz-raw://b35e604e99f0a8eb151a76b38abb758bb25be134c0ea3f837bb0d9d773ceb6d2",
+				"dweb:/ipfs/Qmej1K9L6xpP3RrgsZ5kWGVtkGaGt946q9WFCrWX2LSzug"
 			]
 		}
 	},
